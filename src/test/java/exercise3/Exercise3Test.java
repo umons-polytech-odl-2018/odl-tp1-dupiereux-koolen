@@ -73,7 +73,7 @@ public class Exercise3Test {
 	public void computeEllipsisArea() {
 		Ellipsis ellipsis = buildEllipsis();
 		double area = Exercise3.computeArea(ellipsis);
-		assertThat(area).isCloseTo(Math.PI * 100.0, withinPercentage(1));
+		assertThat(area).isCloseTo(Math.PI * 1000.0, withinPercentage(1));
 	}
 
 	private ConvexPolygon buildSquare() {

@@ -17,13 +17,11 @@ public class Exercise3 {
 	}
 
 	static Ellipsis buildEllipsis(Point center, int xAxisLength, int yAxisLength) {
-		// TODO build an ellipsis
-		return null;
+		return new Ellipsis(center,xAxisLength,yAxisLength);
 	}
 
 	static Ellipsis buildCircle(Point center, int radius) {
-		// TODO build a circle
-		return null;
+		return new Circle(center,radius);
 	}
 
 	static double computePerimeter(ConvexPolygon convexPolygon) {
@@ -37,12 +35,10 @@ public class Exercise3 {
 	}
 
 	static double computePerimeter(Ellipsis ellipsis) {
-		// TODO ask the ellipsis to compute its perimeter
-		return 0.0;
+		return ellipsis.periEllipse();
 	}
 
 	static double computeArea(Ellipsis ellipsis) {
-		// TODO ask the ellipsis to compute its area
-		return 0.0;
+		return ellipsis.aireEllipse();
 	}
 }
